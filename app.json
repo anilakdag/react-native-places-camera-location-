@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "favorite-places",
+    "name": "Favorite Places",
     "slug": "favorite-places",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,13 +13,18 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anilakdag.favoriteplaces"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anilakdag.favoriteplaces"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +41,11 @@
           "cameraPermission": "The app needs access to your camera."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7c95da83-8244-4c59-b895-ce69b8197576"
+      }
+    }
   }
 }
